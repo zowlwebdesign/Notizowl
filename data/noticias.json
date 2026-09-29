@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "titulo": "Becas para estudiantes de tecnología",
+    "categoria": "Educación",
+    "descripcion": "Convocatoria abierta para programas de desarrollo de software.",
+    "contenido": "Una nueva convocatoria ofrece becas parciales y totales para estudiantes de programas de tecnología. Los interesados deben inscribirse en línea, adjuntar su historial académico y presentar una prueba de lógica. Los resultados se publicarán a finales de mes.",
+    "imagen": "img/noticia-1.jpg",
+    "fecha": "2026-09-12",
+    "autor": "Redacción Noti Zowl"
+  },
+  {
+    "id": 2,
+    "titulo": "La IA llega a las pymes colombianas",
+    "categoria": "Tecnología",
+    "descripcion": "Herramientas accesibles para automatizar procesos del negocio.",
+    "contenido": "Cada vez más pequeñas y medianas empresas adoptan herramientas de inteligencia artificial para atender clientes, gestionar inventarios y analizar ventas, con costos de entrada cada vez menores.",
+    "imagen": "img/noticia-2.jpg",
+    "fecha": "2026-09-10",
+    "autor": "Redacción Noti Zowl"
+  },
+  {
+    "id": 3,
+    "titulo": "Cinco destinos para el próximo puente",
+    "categoria": "Turismo",
+    "descripcion": "Planes económicos para recorrer Colombia en pocos días.",
+    "contenido": "Desde pueblos patrimoniales hasta playas poco concurridas, presentamos cinco destinos con planes de bajo costo ideales para aprovechar el festivo: transporte, hospedaje y actividades sugeridas.",
+    "imagen": "img/noticia-3.jpg",
+    "fecha": "2026-09-08",
+    "autor": "Redacción Noti Zowl"
+  },
+  {
+    "id": 4,
+    "titulo": "Crece el comercio electrónico local",
+    "categoria": "Comercial",
+    "descripcion": "Tiendas locales aumentan sus ventas con canales digitales.",
+    "contenido": "Comerciantes de barrio reportan aumentos en sus ventas tras abrir tiendas virtuales y aceptar pagos digitales. Los gremios recomiendan capacitarse en logística y atención al cliente.",
+    "imagen": "img/noticia-4.jpg",
+    "fecha": "2026-09-05",
+    "autor": "Redacción Noti Zowl"
+  },
+  {
+    "id": 5,
+    "titulo": "Curso gratuito de programación web",
+    "categoria": "Educación",
+    "descripcion": "Aprende HTML, CSS y JavaScript desde cero con ejercicios.",
+    "contenido": "Un curso virtual gratuito introduce a los participantes en HTML, CSS y JavaScript con ejercicios prácticos y un proyecto final publicado en internet.",
+    "imagen": "img/noticia-5.jpg",
+    "fecha": "2026-09-03",
+    "autor": "Redacción Noti Zowl"
+  },
+  {
+    "id": 6,
+    "titulo": "Novedades del desarrollo front-end",
+    "categoria": "Tecnología",
+    "descripcion": "Frameworks y buenas prácticas para construir interfaces.",
+    "contenido": "Los equipos de desarrollo priorizan la accesibilidad, el rendimiento y los componentes reutilizables. Angular, entre otros frameworks, consolida un enfoque basado en componentes y enlace de datos.",
+    "imagen": "img/noticia-6.jpg",
+    "fecha": "2026-09-01",
+    "autor": "Redacción Noti Zowl"
+  }
+]

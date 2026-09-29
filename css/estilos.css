@@ -1,0 +1,99 @@
+/* ==========================================================
+   Noti Zowl - Hoja de estilos principal
+   Sistema de diseño definido en la Entrega previa 1 (ver Tabla 3 del informe)
+   ========================================================== */
+
+/* 1. Variables de diseño (paleta) */
+:root {
+  --azul: #0E4A6B;        /* títulos y footer (azul profundo) */
+  --turquesa: #2EC0D6;    /* azul del logo: detalles y acentos */
+  --naranja: #C2410C;     /* botones principales (contraste 5,2:1 con texto blanco: cumple AA) */
+  --naranja-logo: #FF7436;/* naranja del logo: acentos y opción activa */
+  --azul-claro: #E6F7FA;  /* fondos de sección */
+  --blanco: #FFFFFF;
+  --gris: #5B6B7F;
+  --rojo: #B3261E;        /* acciones destructivas y errores */
+  --verde: #1E7B3A;       /* confirmaciones */
+}
+
+/* 2. Base */
+body { font-family: Helvetica, Arial, sans-serif; color: #222; background: var(--blanco); }
+main { min-height: 70vh; }
+h1, h2, h3 { color: var(--azul); font-weight: 700; }
+a { color: var(--naranja); }
+
+/* 3. Header y menú de navegación */
+.site-header { background: #fff; border-bottom: 4px solid var(--turquesa); box-shadow: 0 2px 8px rgba(14,74,107,.1); }
+.site-header .navbar-brand { display: flex; align-items: center; gap: .6rem; color: var(--azul); font-weight: 800; font-size: 1.6rem; line-height: 1; }
+.site-header .navbar-brand img { height: 48px; width: auto; }
+.site-header .navbar-brand small { display: block; font-size: .65rem; font-weight: 400; color: var(--gris); }
+.site-header .nav-link { color: var(--azul); font-weight: 600; padding-bottom: .25rem; border-bottom: 3px solid transparent; }
+.site-header .nav-link.active { border-bottom-color: var(--naranja-logo); font-weight: 700; }
+.site-header .badge-fav { background: var(--naranja); }
+
+/* 4. Botones (primario, secundario y de eliminación) */
+.btn-primario { background: var(--naranja); border: 2px solid var(--naranja); color: #fff; font-weight: 700; }
+.btn-primario:hover, .btn-primario:focus { background: #9A3412; border-color: #9A3412; color: #fff; }
+.btn-secundario { background: #fff; border: 2px solid var(--naranja); color: var(--naranja); font-weight: 700; }
+.btn-secundario:hover { background: var(--naranja); color: #fff; }
+.btn-eliminar { background: var(--rojo); border: 2px solid var(--rojo); color: #fff; }
+.btn-eliminar:hover { background: #8c1d17; color: #fff; }
+
+/* 5. Secciones */
+.hero { background: var(--azul-claro); padding: 3rem 0; }
+.cta { background: #FFF1EA; border-radius: 12px; padding: 1.5rem; }
+.seccion { padding: 2rem 0; }
+
+/* 6. Tarjetas de noticia (rejilla: 3 col escritorio, 2 tableta, 1 móvil via Bootstrap) */
+.tarjeta { border: 1px solid #dde3ec; border-radius: 12px; overflow: hidden; height: 100%; background: #fff;
+           display: flex; flex-direction: column; transition: box-shadow .2s; }
+.tarjeta:hover { box-shadow: 0 6px 18px rgba(31, 58, 95, .15); }
+.tarjeta img { width: 100%; height: 160px; object-fit: cover; background: var(--azul-claro); }
+.tarjeta .cuerpo { padding: 1rem; display: flex; flex-direction: column; flex: 1; gap: .5rem; }
+.tarjeta .cuerpo p { color: var(--gris); font-size: .9rem; margin: 0; flex: 1; }
+.tarjeta h3 { font-size: 1.05rem; margin: 0; }
+
+/* 7. Etiquetas de categoría (color por categoría) */
+.etiqueta { display: inline-block; align-self: flex-start; color: #fff; font-size: .72rem; font-weight: 700;
+            padding: .2rem .7rem; border-radius: 20px; background: var(--gris); }
+.cat-educacion { background: #0E7C93; } .cat-tecnologia { background: var(--azul); }
+.cat-turismo { background: #087F8C; }   .cat-comercial { background: var(--naranja); }
+
+/* 8. Filtros del listado */
+.filtro { border: 2px solid var(--azul); background: #fff; color: var(--azul); border-radius: 20px; padding: .3rem 1rem; font-weight: 700; }
+.filtro.activo { background: var(--azul); color: #fff; }
+
+/* 9. Detalle */
+.detalle-img { width: 100%; max-height: 340px; object-fit: cover; border-radius: 12px; background: var(--azul-claro); }
+.relacionada { display: block; padding: .6rem 0; border-bottom: 1px solid #e3e8ef; text-decoration: none; }
+
+/* 10. Favoritos: fila con miniatura */
+.fila-fav { display: flex; gap: 1rem; align-items: center; border: 1px solid #dde3ec; border-radius: 12px; padding: .8rem; margin-bottom: .8rem; }
+.fila-fav img { width: 110px; height: 75px; object-fit: cover; border-radius: 8px; }
+.fila-fav .acciones { margin-left: auto; display: flex; flex-direction: column; gap: .4rem; }
+@media (max-width: 576px) { .fila-fav { flex-wrap: wrap; } .fila-fav .acciones { flex-direction: row; margin-left: 0; } }
+
+/* 11. Formularios: estados de error y éxito */
+.campo-error { border-color: var(--rojo) !important; }
+.msg-error { color: var(--rojo); font-size: .85rem; margin-top: .25rem; }
+.msg-exito { background: #E6F4EA; border: 1px solid var(--verde); color: var(--verde); border-radius: 8px; padding: .8rem 1rem; }
+
+/* 12. Footer */
+.site-footer { background: var(--azul); color: #fff; padding: 1.5rem 0; font-size: .9rem; }
+.site-footer a { color: #fff; text-decoration: none; margin-right: 1rem; }
+.site-footer a:hover { text-decoration: underline; }
+
+/* 13. Hero con video de fondo (el texto queda sobre una capa azul semitransparente) */
+.hero-video { position: relative; overflow: hidden; color: #fff; padding: 5rem 0; background: var(--azul); }
+.hero-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.hero-video::after { content: ""; position: absolute; inset: 0; z-index: 1;
+                     background: linear-gradient(90deg, rgba(14,74,107,.92) 0%, rgba(14,74,107,.65) 55%, rgba(14,74,107,.35) 100%); }
+.hero-video .container { position: relative; z-index: 2; }
+.hero-video h1, .hero-video .lead { color: #fff; }
+.hero-video .btn-secundario { background: transparent; border-color: #fff; color: #fff; }
+.hero-video .btn-secundario:hover { background: #fff; color: var(--azul); }
+@media (prefers-reduced-motion: reduce) { .hero-video video { display: none; } }  /* accesibilidad: sin movimiento */
+
+/* 14. Footer con datos del autor */
+.site-footer { border-top: 4px solid var(--naranja-logo); }
+.site-footer .autor { line-height: 1.6; }
